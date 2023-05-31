@@ -12,10 +12,10 @@ const Header = () => {
             </div>
             <div className="right-side">
                 <div className="favorite">
-
+                    <img src="/icons/favorite.svg" />
                 </div>
                 <div className="basket">
-
+                    <img src="/icons/basket.svg" />
                 </div>
             </div>
         </div>

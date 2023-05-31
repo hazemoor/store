@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    max-width: 1200px;
+    height: 300px;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    .name {
+        margin-left: 50px;
+        h1 {          
+            font-size: 30px;
+            font-weight: bold;
+        }
+    }
+}
