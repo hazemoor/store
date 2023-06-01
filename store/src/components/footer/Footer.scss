@@ -2,11 +2,14 @@
     display: flex;
     align-items: center;
     margin: auto;
+    margin-top: 65px;
     width: 100%;
     max-width: 1300px;
     height: 300px;
     background-color: rgb(70, 70, 70);
     color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     .name {
         margin-left: 50px;
         h1 {          

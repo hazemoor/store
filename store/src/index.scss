@@ -86,6 +86,15 @@ html {
       align-items: center;
       .elements {
         flex: 1 1 auto;
+        h2 {
+          margin-top: 30px;
+          font-size: 20px;
+        }
+        .card {
+          margin-top: 15px;
+          background-color: rgb(231, 231, 231);
+          border-radius: 20px;
+        }
       }
     }
   }
