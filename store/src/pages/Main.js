@@ -4,8 +4,12 @@ import { Link } from "react-router-dom";
 const Main = () => {
     return (
         <div className="elements">
-            Главная страница
-            Для выбора наушников, перейдите в <Link className="link" to="/catalog">КАТАЛОГ</Link>
+            <div>
+                <h2>
+                    WELCOME!
+                    <p>Для выбора наушников, перейдите в <Link className="link" to="/catalog">КАТАЛОГ</Link></p>
+                </h2>        
+            </div>
         </div>
     )
 }

@@ -2,11 +2,11 @@ import React from "react"
 
 import "./CardProduct.scss"
 
-const CardProduct = () => {
+const CardProduct = (props) => {
     return (
         <div className="card">
             <div className="img">
-                <img />
+                {props.img}
             </div>
             <div className="title">
                 <h2></h2>
