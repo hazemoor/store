@@ -8,7 +8,7 @@ const Header = () => {
         <div className="header">
             <div className="left-side">
                 <h1>
-                    <Link to="/">HEADPHONES</Link>
+                    <Link className="link" to="/">HEADPHONES</Link>
                 </h1>
             </div>
             <div className="right-side">
@@ -16,7 +16,7 @@ const Header = () => {
                     <img src="/icons/favorite.svg" />
                 </div>
                 <div className="basket">
-                    <Link to="/basket"><img src="/icons/basket.svg" /></Link>
+                    <Link className="link" to="/basket"><img src="/icons/basket.svg" /></Link>
                 </div>
             </div>
         </div>

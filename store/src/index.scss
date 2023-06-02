@@ -84,6 +84,13 @@ html {
       flex-direction: column;
       min-height: 100vh;
       align-items: center;
+      .link {
+        text-decoration: none;
+        color: black;
+      }
+      .link-footer {
+        color: rgb(255, 255, 255);
+      }
       .elements {
         flex: 1 1 auto;
         h2 {
