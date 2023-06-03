@@ -1,14 +1,17 @@
 import React from "react";
-
+import { headphones, headphones1 } from "../data/data";
 import CardProduct from "../components/card-product/CardProduct";
+
 
 const Catalog = () => {
     return (
         <div className="elements">
             <h2>Наушники</h2>
-            <CardProduct />
+            {headphones.map((item) => (
+                <CardProduct key={item.id} item={item} />
+            ))}
             <h2>Беспроводные наушники</h2>
-            <CardProduct />
+            
         </div>      
     )
 }
