@@ -11,3 +11,5 @@ const CardProductBasket = () => {
         </div>
     )
 }
+
+export default CardProductBasket;

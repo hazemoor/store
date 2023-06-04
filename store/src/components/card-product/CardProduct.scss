@@ -1,7 +1,8 @@
 .card {
     display: grid;
-    width: 400px;
+    width: 350px;
     height: 500px;
+    grid-template-columns: 1fr 1fr;
     .img {
         h2 {
 

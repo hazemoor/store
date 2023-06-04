@@ -2,13 +2,12 @@ import React from "react"
 
 import "./CardProduct.scss"
 
-
 const CardProduct = ({ item }) => {
     const {id, img, title, price, sale, rate} = item;
     return (
         <div className="card">
             <div className="img">
-                <img src="img" />
+                <img src={img} />
             </div>
             <div className="title">
                 <h2>{title}</h2>

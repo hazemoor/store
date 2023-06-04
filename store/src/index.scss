@@ -91,8 +91,13 @@ html {
       .link-footer {
         color: rgb(255, 255, 255);
       }
-      .elements {
+      .main {
         flex: 1 1 auto;
+        .cards {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          column-gap: 50px;
+        }
         h2 {
           margin-top: 30px;
           font-size: 20px;

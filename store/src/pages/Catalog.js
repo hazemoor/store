@@ -5,11 +5,13 @@ import CardProduct from "../components/card-product/CardProduct";
 
 const Catalog = () => {
     return (
-        <div className="elements">
+        <div className="main">
             <h2>Наушники</h2>
-            {headphones.map((item) => (
-                <CardProduct key={item.id} item={item} />
-            ))}
+            <div className="cards">
+                {headphones.map((item) => (
+                    <CardProduct key={item.id} item={item} />
+                ))}
+            </div>  
             <h2>Беспроводные наушники</h2>
             
         </div>      
