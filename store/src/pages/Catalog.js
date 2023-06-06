@@ -13,6 +13,11 @@ const Catalog = () => {
                 ))}
             </div>  
             <h2>Беспроводные наушники</h2>
+            <div className="cards">
+                {headphones1.map((item) => (
+                    <CardProduct key={item.id} item={item} />
+                ))}
+            </div> 
             
         </div>      
     )
