@@ -6,13 +6,16 @@ import CardProduct from "../components/card-product/CardProduct";
 const Catalog = () => {
     return (
         <div className="main">
-            <h2>Наушники</h2>
+            <div className="section-name">
+                <h2>Каталог</h2>
+            </div>
+            <h3>Наушники</h3>
             <div className="cards">
                 {headphones.map((item) => (
                     <CardProduct key={item.id} item={item} />
                 ))}
             </div>  
-            <h2>Беспроводные наушники</h2>
+            <h3>Беспроводные наушники</h3>
             <div className="cards">
                 {headphones1.map((item) => (
                     <CardProduct key={item.id} item={item} />

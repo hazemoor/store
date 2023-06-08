@@ -79,6 +79,9 @@ h6 {
 
 html {
   body {
+    font-family: "PT Sans";
+    font-weight: 400;
+    color: black;
     .wrapper {
       display: flex;
       flex-direction: column;
@@ -93,6 +96,7 @@ html {
       }
       .main {
         flex: 1 1 auto;
+
         .cards {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
@@ -105,7 +109,17 @@ html {
             }
           
         }
+
+        .section-name {
+          text-align: center;
+        }
+
         h2 {
+          margin-top: 30px;
+          font-weight: 700;
+          font-size: 25px;
+        }
+        h3 {
           margin-top: 30px;
           font-size: 20px;
         }

@@ -5,7 +5,7 @@ import CardProduct from "../components/card-product/CardProduct";
 const Basket = () => {
     return (
         <div className="main">
-            <div>
+            <div className="section-name">
                 <h2>
                     Корзина
                 </h2>

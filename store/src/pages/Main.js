@@ -5,10 +5,10 @@ const Main = () => {
     return (
         <div className="main">
             <div>
-                <h2>
+                <h3>
                     WELCOME!
                     <p>Для выбора наушников, перейдите в <Link className="link" to="/catalog">КАТАЛОГ</Link></p>
-                </h2>        
+                </h3>        
             </div>
         </div>
     )

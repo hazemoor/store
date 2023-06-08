@@ -10,16 +10,16 @@ const CardProduct = ({ item }) => {
                 <img src={img} />
             </div>
             <div className="title">
-                <h2>{title}</h2>
+                <h4>{title}</h4>
             </div>
             <div className="price">
-                <h2>{price}</h2>
+                <h4>{price}</h4>
             </div>
             <div className="sale">
-                <h2>{sale}</h2>
+                <h4>{sale}</h4>
             </div>
             <div className="rate">
-                <h2>{rate}</h2>
+                <h4>{rate}</h4>
             </div>
             <button className="addToBasket">Купить</button>
         </div>
