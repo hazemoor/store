@@ -1,9 +1,14 @@
 import React from "react"
+import { useSelector, useDispatch } from "react-redux";
+import { decrement, increment } from "../../redux/cart/reduser";
 
 import "./CardProduct.scss"
 
 const CardProduct = ({ item }) => {
     const {id, img, title, price, sale, rate} = item;
+    const count = useSelector(state => state.cart.count)
+    const dispatch = useDispatch()
+    
     return (
         <div className="card">
             <div className="img">

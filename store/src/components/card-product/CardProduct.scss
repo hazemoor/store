@@ -3,6 +3,8 @@
     width: 350px;
     height: 500px;
     grid-template-columns: 1fr 1fr;
+    text-align: center;
+    font-size: 20px;
     .img {
         h2 {
 
@@ -27,5 +29,10 @@
         h2 {
             
         }
+    }
+    .addToBasket {
+        background-color: white;
+        border-radius: 20px;
+        height: 30px;
     }
 }

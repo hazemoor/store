@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 import "./Header.scss"
 
 const Header = () => {
+    const count = useSelector(state => state.cart.count)
     return (
         <div className="header">
             <div className="left-side">
@@ -17,6 +19,7 @@ const Header = () => {
                 </div>
                 <div className="basket">
                     <Link className="link" to="/basket"><img src="/icons/basket.svg" /></Link>
+                    <span>{ count }</span>
                 </div>
             </div>
         </div>
