@@ -1,13 +1,17 @@
 import React from "react"
 import { useSelector, useDispatch } from "react-redux";
-import { decrement, increment } from "../../redux/cart/reduser";
+import { addInCart, decrement, increment } from "../../redux/cart/reduser";
 
 import "./CardProduct.scss"
 
 const CardProduct = ({ item }) => {
     const {id, img, title, price, sale, rate} = item;
-    const count = useSelector(state => state.cart.count)
+    
     const dispatch = useDispatch()
+
+    const add = (item) => {
+        dispatch(addInCart(item))
+    }
     
     return (
         <div className="card">
@@ -26,7 +30,7 @@ const CardProduct = ({ item }) => {
             <div className="rate">
                 <h4>{rate}</h4>
             </div>
-            <button className="addToBasket">Купить</button>
+            <button onClick={() => add(item)} className="addToBasket">Купить</button>
         </div>
     )
 }
