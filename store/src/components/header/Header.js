@@ -19,7 +19,7 @@ const Header = () => {
                 </div>
                 <div className="basket">
                     <Link className="link" to="/basket"><img src="/icons/basket.svg" /></Link>
-                    <span>{ cart.length }</span>
+                    <span className="countBasket">{ cart.length === 0 ? null : cart.length }</span>
                 </div>
             </div>
         </div>

@@ -24,8 +24,19 @@
             }
         }
         .basket {
+            position: relative;
             img {
                 width: 35px;
+                
+            }
+            .countBasket {
+                position: absolute;
+                border-radius: 50%;
+                background-color: orange;
+                right: -10px;
+                top: -10px;
+                font-size: 25px;
+
             }
         }
     }
