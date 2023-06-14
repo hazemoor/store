@@ -113,6 +113,18 @@ html {
         .section-name {
           text-align: center;
         }
+        .cards-price {
+          display: flex;
+          column-gap: 500px;
+          margin-top: 50px;
+          .cards-basket {
+            list-style-type: none;;
+          }
+          .total-price {
+            display: flex;
+            column-gap: 50px;
+          }
+        }
 
         h2 {
           margin-top: 30px;
