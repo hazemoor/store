@@ -115,10 +115,10 @@ html {
         }
         .cards-price {
           display: flex;
-          column-gap: 500px;
+          column-gap: 400px;
           margin-top: 50px;
           .cards-basket {
-            list-style-type: none;;
+            list-style-type: none;
           }
           .total-price {
             display: flex;
@@ -134,11 +134,6 @@ html {
         h3 {
           margin-top: 30px;
           font-size: 25px;
-        }
-        .card {
-          margin-top: 15px;
-          background-color: rgb(241, 241, 241);
-          border-radius: 20px;
         }
       }
     }

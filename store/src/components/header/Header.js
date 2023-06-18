@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import "./Header.scss"
 
 const Header = () => {
-    const cart = useSelector(state => state.cart.cart)
+    const countBasket = useSelector(state => state.cart.itemsInCart)
     return (
         <div className="header">
             <div className="left-side">
@@ -19,7 +19,7 @@ const Header = () => {
                 </div>
                 <div className="basket">
                     <Link className="link" to="/basket"><img src="/icons/basket.svg" /></Link>
-                    <span className="countBasket">{ cart.length === 0 ? null : cart.length }</span>
+                    <span className="countBasket">{ countBasket.length === 0 ? null : countBasket.length }</span>
                 </div>
             </div>
         </div>

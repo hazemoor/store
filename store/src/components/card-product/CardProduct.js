@@ -1,17 +1,22 @@
 import React from "react"
 import { useSelector, useDispatch } from "react-redux";
-import { addInCart, decrement, increment } from "../../redux/cart/reduser";
+import { addInCart, removeFromCart } from "../../redux/cart/reduser";
 
 import "./CardProduct.scss"
 
 const CardProduct = ({ item }) => {
     const {id, img, title, price, sale, rate} = item;
-    
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
+    const items = useSelector((state)=>state.cart.itemsInCart);
+    const isItemInCart = items.some((item) => item.id === id);
 
-    const add = (item) => {
-        dispatch(addInCart(item))
-    }
+    const add = () => {
+        if (isItemInCart) {
+            dispatch(removeFromCart(id))
+        } else {
+            dispatch(addInCart(item))
+        }     
+    };
     
     return (
         <div className="card">
@@ -30,7 +35,11 @@ const CardProduct = ({ item }) => {
             <div className="rate">
                 <h4>{rate}</h4>
             </div>
-            <button onClick={() => add(item)} className="addToBasket">Купить</button>
+            <button 
+                className="addToBasket"
+                type={isItemInCart ? "second" : "first"}
+                onClick={add} >{isItemInCart ? "Удалить" : "Купить"}
+            </button>
         </div>
     )
 }

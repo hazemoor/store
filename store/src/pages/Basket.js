@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import CardProductBasket from "../components/card-product-basket/CardProductBasket";
 
 const Basket = () => {
-    const cartItems = useSelector(state => state.cart.cart)
+    const items = useSelector(state => state.cart.itemsInCart)
     const totalPrice = useSelector(state => state.cart.totalPrice)
     return (
         <div className="main">
@@ -16,7 +16,7 @@ const Basket = () => {
             </div>
             <div className="cards-price">
                 <li className="cards-basket">
-                    {cartItems.map((itemBasket) => (
+                    {items.map((itemBasket) => (
                         <CardProductBasket key={itemBasket.id} itemBasket={itemBasket} />
                     ))}
                 </li>
