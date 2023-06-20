@@ -1,9 +1,33 @@
 .card-basket {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
+    grid-template-rows: 1fr 1fr;
     width: 400px;
-    margin-top: 15px;
+    height: 200px;
     background-color: rgb(241, 241, 241);
     border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    .count {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 20px;
+        .count-span {
+            width: 10px;
+        }
+    }
+    .img {
+        .img-product-basket {
+            height: 150px;
+            width: 150px;
+        }
+    }
+    .img-button {
+        width: 40px;
+        height: 40px;
+    }
+    
+
 }

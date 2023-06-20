@@ -6,7 +6,6 @@ import "./CardProductBasket.scss"
 
 const CardProductBasket = ({ itemBasket }) => {
     const {id, img, title, price, sale, rate, count} = itemBasket;
-
     const dispatch = useDispatch();
 
     const del = () => {
@@ -22,21 +21,24 @@ const CardProductBasket = ({ itemBasket }) => {
     };
 
     return (
-        
         <div className="card-basket">
-            <div>
-                <img src={img} />    
+            <div className="img">
+                <img className="img-product-basket" src={img} />    
             </div>
-            <div>{title}</div>
-            <div>{price}</div>
-            <div>{sale}</div>
-            <div>{rate}</div>
             <div>
+                <div>{title}</div>
+                <div>{price} ₽</div>
+            </div>
+            <button className="img-button" onClick={del}>
+                <img className="img-button" src="/icons/rem.svg"/>
+            </button>
+            <div className="count">
                 <button className="dec" onClick={dec}>-</button>
-                <span>{count}</span>
+                <span className="count-span">{count}</span>
                 <button className="inc" onClick={inc}>+</button>
             </div>
-            <button onClick={del}><img src="/icons/rem.svg" /></button>
+            <div></div>
+            <div>{price} ₽</div>
         </div>
     );
 };

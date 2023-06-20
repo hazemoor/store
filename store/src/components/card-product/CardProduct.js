@@ -21,19 +21,27 @@ const CardProduct = ({ item }) => {
     return (
         <div className="card">
             <div className="img">
-                <img src={img} />
+                <img className="img-product" src={img} />
             </div>
             <div className="title">
-                <h4>{title}</h4>
+                {title}
             </div>
-            <div className="price">
-                <h4>{price}</h4>
-            </div>
-            <div className="sale">
-                <h4>{sale}</h4>
+            <div>
+                <div className="price">
+                    {price} ₽
+                </div>
+                <div className="sale">
+                    {sale}
+                </div>
             </div>
             <div className="rate">
-                <h4>{rate}</h4>
+                <div>
+                    <img className="star" src="/icons/star.png"/> 
+                </div>
+               <span>
+                    {rate}   
+               </span>
+               
             </div>
             <button 
                 className="addToBasket"
